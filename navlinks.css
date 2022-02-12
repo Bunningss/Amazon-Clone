@@ -1,0 +1,36 @@
+.nav-links {
+  background: #232f3e;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  height: 39px;
+}
+
+.nav-links > li {
+  list-style: none;
+  text-transform: capitalize;
+  color: #fff;
+  cursor: pointer;
+  padding: 5px;
+  font-size: 14px;
+}
+
+.nav-links > li > a {
+  text-decoration: none;
+  color: #fff;
+}
+
+.nav-links > li:hover {
+  border: 1px solid #dadada;
+  border-radius: 3px;
+}
+
+.toggle {
+  display: flex;
+  justify-content: center;
+}
+
+.toggle > img {
+  height: 20px;
+  filter: invert(1);
+}

@@ -1,0 +1,84 @@
+.top-seller {
+  margin: 6.5rem 12.5rem 1rem 12.5rem;
+  background: #fff;
+  position: relative;
+}
+
+.top-seller > h4 {
+  font-size: 21px;
+  text-transform: capitalize;
+  padding: 0.5rem;
+}
+
+.seller-card-container {
+  width: 100%;
+  display: flex;
+  overflow: hidden;
+  padding: 1rem 0;
+}
+
+.seller-card {
+  margin: 1rem 0.5rem;
+  max-width: 270px;
+  min-width: 150px;
+  min-height: 200px;
+  vertical-align: middle;
+}
+
+.seller-card > img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.top-seller-arrow-container-left {
+  background: #fff;
+  height: 100px;
+  width: 45px;
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  margin: auto;
+  opacity: 0.5;
+  border-radius: 5px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: all 0.3s ease;
+}
+
+.top-seller-arrow-container-right {
+  background: #fff;
+  height: 100px;
+  width: 45px;
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  margin: auto;
+  opacity: 0.5;
+  border-radius: 5px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: all 0.3s ease;
+}
+
+.top-seller-arrow-container-left:hover {
+  opacity: 1;
+  border: 2px solid #008296;
+}
+
+.top-seller-arrow-container-right:hover {
+  opacity: 1;
+  border: 2px solid #008296;
+}
+
+.top-seller-arrow-container-left > img {
+  width: 30px;
+  transform: rotate(180deg);
+}
+
+.top-seller-arrow-container-right > img {
+  width: 30px;
+}

@@ -1,0 +1,16 @@
+.to-top {
+  height: 50px;
+  background: #3e4e63;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.to-top:hover {
+  background: #485769;
+}
+
+.to-top > p {
+  color: #fff;
+  font-size: 13px;
+}

@@ -1,0 +1,22 @@
+.category-bar {
+  margin: 10px 0 5px;
+  border-bottom: 1px solid lightgrey;
+  padding: 0 10px;
+  /* background: #fff; */
+}
+
+.category-bar > ul {
+  display: flex;
+}
+
+.category-bar > ul > li {
+  padding: 0 20px;
+  list-style: none;
+  font-size: 14px;
+  font-weight: 600;
+}
+
+.category-bar > ul > li:hover {
+  color: #e47911;
+  border-bottom: 2px solid #e47911;
+}
