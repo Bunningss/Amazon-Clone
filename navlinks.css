@@ -4,6 +4,9 @@
   justify-content: space-evenly;
   align-items: center;
   height: 39px;
+  /* overflow-y: hidden;
+  overflow-x: scroll;
+  -webkit-overflow-scrolling: touch; */
 }
 
 .nav-links > li {
@@ -13,6 +16,11 @@
   cursor: pointer;
   padding: 5px;
   font-size: 14px;
+  /* min-width: fit-content; */
+}
+
+.nav-links > li:nth-child(n + 11) {
+  display: none;
 }
 
 .nav-links > li > a {
@@ -42,7 +50,7 @@
     justify-content: start;
     align-items: center;
     height: 39px;
-    overflow: scroll;
+    overflow-x: scroll;
     -webkit-overflow-scrolling: touch;
   }
 

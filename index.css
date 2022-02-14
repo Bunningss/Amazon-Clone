@@ -13,6 +13,7 @@
 @import "./bestsellers.css";
 @import "./suggestions.css";
 @import "./sidebar.css";
+@import "./customerservice.css";
 
 * {
   margin: 0;
@@ -22,7 +23,7 @@
 }
 
 html {
-  background: #eaeded;
+  background: #fbfbfd;
 }
 
 .noscroll {

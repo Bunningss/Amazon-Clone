@@ -17,7 +17,7 @@
 }
 
 .nav-mobile-login {
-  display: flex;
+  display: none;
   align-items: center;
   text-decoration: none;
   color: #fff;
@@ -26,6 +26,10 @@
 .nav-mobile-login > img {
   width: 30px;
   filter: invert(1);
+}
+
+.nav-mobile-cart {
+  display: none;
 }
 
 .nav-mobile-cart > a > img {
@@ -233,6 +237,14 @@
   }
 
   .nav-mobile-toggle {
+    display: block;
+  }
+
+  .nav-mobile-login {
+    display: flex;
+  }
+
+  .nav-mobile-cart {
     display: block;
   }
 }
