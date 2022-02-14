@@ -28,3 +28,39 @@
   height: 100%;
   object-fit: cover;
 }
+
+@media screen and (max-width: 450px) {
+  .popular-products {
+    margin: 5px 0;
+    padding: 15px;
+  }
+
+  .popular-products > h4 {
+    font-size: 20px;
+    padding: 0 0 10px 0;
+  }
+
+  .popular-products-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    overflow: hidden;
+    padding: 0 0;
+  }
+
+  .popular-products-card {
+    max-width: 190px;
+    min-width: 190px;
+    height: 210px;
+    height: 210px;
+    margin: 0.5rem 0.2rem;
+  }
+
+  .popular-products-card:nth-child(n + 5) {
+    display: none;
+  }
+
+  .popular-products-card > img {
+    object-fit: contain;
+  }
+}

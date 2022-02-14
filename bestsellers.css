@@ -3,7 +3,7 @@
 }
 
 .best-seller-header {
-  margin: 15px 0;
+  margin: 30px 0 10px 0;
 }
 
 .best-seller-header > h2 {
@@ -24,7 +24,7 @@
 .best-seller-cat {
   padding: 0 10px;
   border-right: 1px solid lightgrey;
-  width: 15%;
+  width: 12%;
   height: 100%;
 }
 
@@ -41,6 +41,8 @@
 .best-seller-cat > ul > li > a {
   text-decoration: none;
   color: #000;
+  font-size: 14px;
+  font-weight: 600;
 }
 
 .best-seller-products {
@@ -56,12 +58,14 @@
 
 .best-seller-books {
   position: relative;
-  overflow: hidden;
+  overflow: scroll;
+  -webkit-overflow-scrolling: touch;
 }
 
 .section-header {
   display: flex;
   align-items: center;
+  margin: 20px 0;
 }
 
 .section-header > h2 {
@@ -137,13 +141,23 @@
   text-decoration: none;
 }
 
+/* Product Card Start */
 .pro-card {
-  height: 327px;
+  /* height: 327px; */
   width: 225px;
   min-width: 225px;
   position: relative;
   background: #fff;
   margin-left: 16px;
+}
+
+.suggestion-card {
+  /* height: 327px; */
+  width: 225px;
+  min-width: 225px;
+  position: relative;
+  background: #fff;
+  margin-left: 30px;
 }
 
 .badge-wrapper {
@@ -166,7 +180,8 @@
   );
   color: #fff;
   display: flex;
-  justify-content: center;
+  padding: 0 5px;
+  font-size: 14px;
   align-items: center;
 }
 
@@ -214,4 +229,53 @@
 .price {
   padding: 5px;
   color: #b1315d;
+}
+
+.badge-container {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  flex-wrap: wrap;
+  font-size: 12px;
+  margin: 5px 0;
+}
+
+.badge-container > a {
+  text-decoration: none;
+  font-size: 12px;
+  color: #007185;
+}
+
+.best-seller-badge {
+  clip-path: polygon(100% 0%, 90% 51%, 100% 100%, 0 100%, 0% 50%, 0 0);
+  background: #c45500;
+  border-radius: 3px;
+  width: 45%;
+  height: 17px;
+  font-size: 12px;
+  color: #fff;
+  font-weight: 600;
+  display: flex;
+  align-items: center;
+  padding: 0 5px;
+}
+
+/* Product Card End */
+
+@media screen and (max-width: 450px) {
+  .best-seller-header {
+    display: none;
+  }
+
+  .best-seller-cat {
+    width: 100%;
+  }
+
+  .best-seller-products {
+    display: none;
+  }
+
+  .suggestion {
+    display: none;
+  }
 }

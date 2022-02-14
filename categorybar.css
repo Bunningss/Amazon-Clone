@@ -20,3 +20,20 @@
   color: #e47911;
   border-bottom: 2px solid #e47911;
 }
+
+@media screen and (max-width: 450px) {
+  .category-bar {
+    padding: 5px;
+    overflow: scroll;
+    -webkit-overflow-scrolling: touch;
+  }
+
+  .category-bar > ul > li {
+    padding: 0 20px;
+    list-style: none;
+    font-size: 14px;
+    font-weight: 600;
+    display: inline-block;
+    min-width: fit-content;
+  }
+}

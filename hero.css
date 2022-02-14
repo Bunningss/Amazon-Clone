@@ -13,7 +13,7 @@
 .card-container {
   display: flex;
   justify-content: space-evenly;
-  align-items: center;
+  /* align-items: center; */
   height: 420px;
   position: absolute;
   /* bottom: -2rem; */
@@ -22,7 +22,8 @@
 }
 
 .card {
-  width: 23%;
+  flex: 1;
+  /* width: 23%; */
   height: 100%;
   margin: 0 0.6rem;
   padding: 1rem;
@@ -93,4 +94,65 @@
 
 .slider-arrow-left {
   transform: rotate(180deg);
+}
+
+@media screen and (max-width: 450px) {
+  .slider {
+    height: 50vh;
+    margin: 5px 0;
+    position: relative;
+    overflow: hidden;
+  }
+
+  .slider-arrow {
+    display: none;
+  }
+
+  .slider-img {
+    object-fit: contain;
+    background: url("https://m.media-amazon.com/images/I/515QJ5ulwIL._SR1236,1080_.jpg");
+  }
+
+  .card-container {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    height: 200px;
+    position: absolute;
+    bottom: 0;
+    top: auto;
+    margin: 0 0.1rem;
+  }
+
+  .card {
+    width: 135px;
+    height: 180px;
+    margin: 0 0.2rem;
+    padding: 0;
+    background: #fff;
+    border-radius: 5px;
+  }
+
+  .card > a {
+    display: none;
+  }
+
+  .card > h3 {
+    height: 20%;
+    font-size: 14px;
+    padding: 0 0.5rem;
+    border-radius: 5px;
+  }
+
+  .card > img {
+    border-radius: 5px;
+  }
+
+  .slider-arrow-container-left {
+    display: none;
+  }
+
+  .slider-arrow-container-right {
+    display: none;
+  }
 }

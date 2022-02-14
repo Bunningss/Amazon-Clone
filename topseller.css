@@ -82,3 +82,53 @@
 .top-seller-arrow-container-right > img {
   width: 30px;
 }
+
+@media screen and (max-width: 450px) {
+  .top-seller {
+    margin: 5px 0;
+    padding: 15px;
+    background: #fff;
+    position: relative;
+  }
+
+  .top-seller > h4 {
+    font-size: 20px;
+    text-transform: capitalize;
+    padding: 0 0 10px 0;
+  }
+
+  .seller-card-container {
+    width: 100%;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    overflow: hidden;
+    padding: 0 0;
+  }
+
+  .seller-card:nth-child(n + 5) {
+    display: none;
+  }
+
+  .seller-card {
+    margin: 0.5rem 0.2rem;
+    max-width: 190px;
+    min-width: 190px;
+    height: 210px;
+    vertical-align: middle;
+  }
+
+  .seller-card > img {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+  }
+
+  .top-seller-arrow-container-left {
+    display: none;
+  }
+
+  .top-seller-arrow-container-right {
+    display: none;
+  }
+}

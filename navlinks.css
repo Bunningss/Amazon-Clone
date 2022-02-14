@@ -34,3 +34,25 @@
   height: 20px;
   filter: invert(1);
 }
+
+@media screen and (max-width: 450px) {
+  .nav-links {
+    background: #232f3e;
+    display: flex;
+    justify-content: start;
+    align-items: center;
+    height: 39px;
+    overflow: scroll;
+    -webkit-overflow-scrolling: touch;
+  }
+
+  .nav-links > li {
+    min-width: fit-content;
+    padding: 0;
+    margin: 0 5px;
+  }
+
+  .toggle {
+    display: none;
+  }
+}

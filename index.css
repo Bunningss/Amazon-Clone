@@ -12,6 +12,7 @@
 @import "./categorybar.css";
 @import "./bestsellers.css";
 @import "./suggestions.css";
+@import "./sidebar.css";
 
 * {
   margin: 0;
@@ -22,4 +23,9 @@
 
 html {
   background: #eaeded;
+}
+
+.sidebar.slideIn {
+  transform: translateX(0vw);
+  opacity: 1;
 }

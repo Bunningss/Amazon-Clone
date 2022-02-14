@@ -1,0 +1,38 @@
+.sidebar {
+  width: 100vw;
+  height: 100vh;
+  z-index: 5;
+  transform: translateX(-100vw);
+  transition: all 0.3s ease-in-out;
+  display: flex;
+  position: absolute;
+  top: 0;
+  left: 0;
+  opacity: 0;
+}
+
+.actual-sidebar {
+  width: 18%;
+  height: 100%;
+  background: #fff;
+}
+
+.backdrop {
+  width: 82%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.35);
+  opacity: transparent;
+}
+
+@media screen and (max-width: 450px) {
+  .actual-sidebar {
+    width: 82%;
+    height: 100%;
+  }
+
+  .backdrop {
+    width: 18%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.35);
+  }
+}
