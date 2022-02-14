@@ -25,6 +25,14 @@ html {
   background: #eaeded;
 }
 
+.noscroll {
+  overflow: hidden;
+}
+
+a {
+  text-decoration: none;
+}
+
 .sidebar.slideIn {
   transform: translateX(0vw);
   opacity: 1;
