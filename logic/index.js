@@ -12,8 +12,6 @@
         mobileSidebar.classList.toggle('slideIn');
     });
     
-    backdrop && backdrop.addEventListener('click', ()=> {
+    backdrop && backdrop.addEventListener('click', () => {
         mobileSidebar.classList.toggle('slideIn');
     });
-
-    
