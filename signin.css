@@ -52,11 +52,21 @@
 }
 
 .signin-btn {
-  background: rgb(201, 153, 32);
+  background: rgba(255, 206, 82, 1);
+  background: -webkit-linear-gradient(
+    bottom,
+    rgba(255, 206, 82, 1),
+    rgba(230, 164, 0, 1)
+  );
+  background: -moz-linear-gradient(
+    bottom,
+    rgba(255, 206, 82, 1),
+    rgba(230, 164, 0, 1)
+  );
   background: linear-gradient(
-    180deg,
-    rgba(201, 153, 32, 1) 0%,
-    rgba(253, 187, 45, 0.7847514005602241) 100%
+    to top,
+    rgba(255, 206, 82, 1),
+    rgba(230, 164, 0, 1)
   );
   font-size: 13px;
 }
@@ -147,6 +157,7 @@
 
 .signin-footer-links {
   margin: 20px 0 10px 0;
+  text-align: center;
 }
 
 .signin-footer-links > a {
@@ -162,4 +173,10 @@
 
 .signin-footer > p {
   font-size: 12px;
+}
+
+@media screen and (max-width: 450px) {
+  .signin-footer {
+    background: #0d141e;
+  }
 }

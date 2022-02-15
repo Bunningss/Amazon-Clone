@@ -2,6 +2,7 @@
   height: 60vh;
   margin: 0 12.5rem;
   position: relative;
+  overflow: hidden;
 }
 
 .slider-img {
@@ -13,17 +14,19 @@
 .card-container {
   display: flex;
   justify-content: space-evenly;
-  /* align-items: center; */
+
   height: 420px;
   position: absolute;
-  /* bottom: -2rem; */
+
   top: 250px;
   margin: 0 0.8rem;
+  width: 100%;
 }
 
 .card {
   flex: 1;
   /* width: 23%; */
+  /* min-width: 200px; */
   height: 100%;
   margin: 0 0.6rem;
   padding: 1rem;
@@ -96,12 +99,26 @@
   transform: rotate(180deg);
 }
 
+@media screen and (max-width: 1400px) {
+  .slider {
+    margin: 0 0.5rem;
+  }
+
+  .card:nth-child(n + 4) {
+    display: none;
+  }
+
+  .card > h3 {
+    font-size: 16px;
+  }
+}
+
 @media screen and (max-width: 450px) {
   .slider {
     height: 50vh;
     margin: 5px 0;
     position: relative;
-    overflow: hidden;
+    /* overflow: hidden; */
   }
 
   .slider-arrow {
@@ -118,19 +135,27 @@
     justify-content: space-evenly;
     align-items: center;
     height: 200px;
+    /* min-width: 100%; */
     position: absolute;
     bottom: 0;
     top: auto;
     margin: 0 0.1rem;
+    overflow: scroll;
   }
 
   .card {
-    width: 135px;
+    min-width: 30vw;
+    /* min-width: 135px; */
+    /* max-width: 140px; */
     height: 180px;
     margin: 0 0.2rem;
     padding: 0;
     background: #fff;
     border-radius: 5px;
+  }
+
+  .card:nth-child(n + 4) {
+    display: block;
   }
 
   .card > a {
@@ -142,6 +167,9 @@
     font-size: 14px;
     padding: 0 0.5rem;
     border-radius: 5px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
   }
 
   .card > img {
@@ -156,3 +184,10 @@
     display: none;
   }
 }
+
+/* @media screen and (max-width: 375px) {
+  .card-container {
+    overflow-x: scroll;
+    -webkit-overflow-scrolling: touch;
+  }
+} */

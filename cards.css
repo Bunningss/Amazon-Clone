@@ -1,10 +1,12 @@
 .cards-container {
   margin: 1rem 12.5rem;
   display: flex;
+  overflow-x: scroll;
 }
 
 .product-card {
   height: 420px;
+  min-width: 310px;
   padding: 20px 0;
   background-color: #fff;
   margin: 0 10px;
@@ -38,6 +40,12 @@
 
 .product-card-fi {
   margin-left: 0;
+}
+
+@media screen and (max-width: 1400px) {
+  .cards-container {
+    margin: 1rem 0.5rem;
+  }
 }
 
 .product-card-la {

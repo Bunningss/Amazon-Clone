@@ -13,7 +13,7 @@
 .seller-card-container {
   width: 100%;
   display: flex;
-  overflow: hidden;
+  overflow-x: scroll;
   padding: 1rem 0;
 }
 
@@ -83,10 +83,16 @@
   width: 30px;
 }
 
+@media screen and (max-width: 1400px) {
+  .top-seller {
+    margin: 6.5rem 0.5rem 1rem 0.5rem;
+  }
+}
+
 @media screen and (max-width: 450px) {
   .top-seller {
-    margin: 5px 0;
-    padding: 15px;
+    margin: 0px 0;
+    padding: 5px;
     background: #fff;
     position: relative;
   }
@@ -111,11 +117,12 @@
   }
 
   .seller-card {
-    margin: 0.5rem 0.2rem;
-    max-width: 190px;
-    min-width: 190px;
+    margin: 0.3rem 0rem;
+    width: 190px;
     height: 210px;
-    vertical-align: middle;
+    display: flex;
+    justify-content: center;
+    align-items: center;
   }
 
   .seller-card > img {

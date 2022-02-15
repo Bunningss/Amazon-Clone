@@ -58,7 +58,7 @@
 
 .best-seller-books {
   position: relative;
-  /* overflow-x: hidden; */
+  overflow-y: hidden;
   overflow-x: scroll;
   -webkit-overflow-scrolling: touch;
 }
