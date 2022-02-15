@@ -1,0 +1,89 @@
+.cart-container {
+  display: flex;
+  margin: 1rem;
+  /* background: grey; */
+}
+
+.cart-items {
+  width: 80%;
+}
+
+.cart-empty {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 270px;
+  /* background: grey; */
+  padding: 20px 0 15px 0;
+  background: #fff;
+  margin: 0 0 1rem 0;
+}
+
+.empty-cart-items {
+  padding: 20px;
+}
+
+.empty-cart-items > h2 {
+  font-size: 24px;
+}
+
+.empty-cart-items > a {
+  font-size: 14px;
+  color: rgb(68, 133, 155);
+}
+
+.empty-cart-items > a:hover {
+  color: #c85552;
+  text-decoration: underline;
+}
+
+.cart-empty > img {
+  width: 40%;
+}
+
+.empty-cart-buttons {
+  margin: 16px 0;
+  width: 100%;
+}
+
+.signinacc-btn {
+  height: 31px;
+  width: 50%;
+  border: 1px solid #f7ca00;
+  border-radius: 5px;
+  font-size: 16px;
+  padding: 5px;
+  /* background: #f7ca00; */
+  color: #000;
+}
+
+.signinacc-btn:hover {
+  background: #f7ca00;
+}
+
+.signupacc-btn {
+  height: 31px;
+  width: 50%;
+  border: 1px solid lightgrey;
+  border-radius: 5px;
+  font-size: 16px;
+  padding: 5px;
+  color: #000;
+  box-shadow: rgba(0, 0, 0, 0.15) 0px 5px 15px;
+}
+
+.cart-with-items {
+  min-height: 74px;
+  background: #fff;
+  padding: 20px 0 15px 0;
+  margin-bottom: 1rem;
+}
+
+.cart-suggestions {
+  width: 20%;
+  background: #fff;
+  margin: 0 0 0 1rem;
+  border: 1px solid lightgrey;
+  border-radius: 5px;
+  min-height: 270px;
+}
