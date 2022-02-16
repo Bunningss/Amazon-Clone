@@ -48,6 +48,10 @@ a {
   filter: invert(1);
 }
 
+.highlight {
+  border-bottom: 4px solid orange;
+}
+
 /* Custom Scroll Bar */
 ::-webkit-scrollbar {
   -webkit-appearance: none;
