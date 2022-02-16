@@ -10,7 +10,7 @@
 
 .cart-empty {
   display: flex;
-  justify-content: center;
+  justify-content: flex-start;
   align-items: center;
   height: 270px;
   /* background: grey; */
@@ -39,22 +39,30 @@
 
 .cart-empty > img {
   width: 40%;
+  height: 100%;
 }
 
 .empty-cart-buttons {
   margin: 16px 0;
-  width: 100%;
+  height: auto;
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  /* width: 100%; */
 }
 
 .signinacc-btn {
   height: 31px;
-  width: 50%;
+  width: fit-content;
+  margin: 0 10px;
   border: 1px solid #f7ca00;
   border-radius: 5px;
   font-size: 16px;
   padding: 5px;
-  /* background: #f7ca00; */
   color: #000;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 .signinacc-btn:hover {
@@ -63,13 +71,17 @@
 
 .signupacc-btn {
   height: 31px;
-  width: 50%;
+  width: fit-content;
   border: 1px solid lightgrey;
   border-radius: 5px;
   font-size: 16px;
   padding: 5px;
   color: #000;
   box-shadow: rgba(0, 0, 0, 0.15) 0px 5px 15px;
+}
+
+.signupacc-btn:hover {
+  background: rgba(0, 0, 0, 0.15);
 }
 
 .cart-with-items {
@@ -86,4 +98,58 @@
   border: 1px solid lightgrey;
   border-radius: 5px;
   min-height: 270px;
+  padding: 10px;
+}
+
+.cart-suggestions > p {
+  font-size: 14px;
+  font-weight: 600;
+}
+
+.cart-suggestions-card {
+  display: flex;
+  height: 100px;
+  margin: 10px 0;
+}
+
+.cart-suggestion-card-image {
+  flex: 1;
+  object-fit: contain;
+}
+
+.cart-suggestion-card-info {
+  flex: 1;
+  font-size: 12px;
+  display: flex;
+  flex-direction: column;
+}
+
+.cart-suggestion-card-info > p {
+  padding: 3px 0;
+}
+
+.cart-suggestion-info-link {
+  color: rgb(68, 133, 155);
+  padding: 3px 0;
+}
+
+.cart-suggestion-info-link:hover {
+  color: #c85552;
+  text-decoration: underline;
+}
+
+.cart-suggestion-info-price {
+  color: #c85552;
+}
+
+.preorder-btn {
+  background: #f7ca00;
+  border-radius: 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 3px;
+  font-weight: 400;
+  /* width: 90%; */
+  color: #000;
 }

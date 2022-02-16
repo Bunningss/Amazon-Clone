@@ -17,6 +17,7 @@
 @import "./signin.css";
 @import "./createaccount.css";
 @import "./cart.css";
+@import "./myaccount.css";
 
 * {
   margin: 0;

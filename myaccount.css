@@ -1,0 +1,57 @@
+.my-account-container {
+  padding: 14px 18px 18px;
+  margin: 0 auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.my-account-personalized {
+  max-width: 1000px;
+  /* border: 1px solid red; */
+}
+
+.my-account-grid {
+  padding: 10px;
+  border-bottom: 1px solid lightgrey;
+}
+
+.my-account-grid-content {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: 1fr 1fr 1fr;
+}
+
+.my-account-grid-card {
+  display: flex;
+  align-items: center;
+  padding: 10px;
+  border: 1px solid lightgrey;
+  border-radius: 5px;
+  margin: 10px;
+  color: rgb(75, 73, 73);
+}
+
+.my-account-grid-card:hover {
+  background: rgba(0, 0, 0, 0.15);
+}
+
+.icon-round {
+  width: 60px;
+  /* padding: 10px; */
+  background: #b8dde1;
+  border-radius: 50%;
+}
+
+.my-account-grid-card-text {
+  margin-left: 10px;
+}
+
+.my-account-grid-card-text > h6 {
+  font-size: 17px;
+  font-weight: 500;
+  padding: 5px 0;
+}
+.my-account-grid-card-text > p {
+  font-size: 14px;
+}
