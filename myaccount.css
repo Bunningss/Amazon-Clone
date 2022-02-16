@@ -94,3 +94,48 @@
   color: #c85552;
   text-decoration: underline;
 }
+
+.my-acc-mobile-container {
+  display: none;
+}
+
+@media screen and (max-width: 450px) {
+  .my-account-container {
+    display: none;
+  }
+
+  .my-acc-mobile-container {
+    margin: 15px;
+    display: block;
+  }
+
+  .my-acc-mobile-header {
+    font-size: 22px;
+    margin: 15px 0;
+    font-weight: 700;
+  }
+
+  .my-acc-mobile-content > h5 {
+    font-size: 18px;
+    margin: 10px 0;
+  }
+
+  .my-acc-mobile-links {
+    border: 1px solid lightgrey;
+    border-radius: 5px;
+    /* padding: 10px; */
+    list-style: none;
+  }
+
+  .my-acc-mobile-links > li {
+    padding: 15px 10px;
+    border-bottom: 1px solid lightgrey;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  .my-acc-mobile-links > li > a {
+    color: rgb(46, 44, 44);
+  }
+}

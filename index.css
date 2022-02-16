@@ -18,6 +18,7 @@
 @import "./createaccount.css";
 @import "./cart.css";
 @import "./myaccount.css";
+@import "./myorders.css";
 
 * {
   margin: 0;
