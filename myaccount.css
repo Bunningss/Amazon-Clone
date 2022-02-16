@@ -55,3 +55,42 @@
 .my-account-grid-card-text > p {
   font-size: 14px;
 }
+/* account links */
+.account-links-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: 1fr 1fr 1fr;
+  margin: 10px;
+}
+
+.account-links-grid-card {
+  border: 1px solid lightgrey;
+  border-radius: 5px;
+  display: flex;
+  flex-direction: column;
+  margin: 10px;
+  padding: 10px;
+}
+
+.account-links-grid-card-header {
+  margin: 10px 0;
+  font-size: 17px;
+}
+
+.account-links-grid-card-links {
+  list-style: none;
+}
+
+.account-links-grid-card-links > li {
+  padding: 5px 0;
+  font-size: 14px;
+}
+
+.account-links-grid-card-links > li > a {
+  color: #000;
+}
+
+.account-links-grid-card-links > li > a:hover {
+  color: #c85552;
+  text-decoration: underline;
+}
