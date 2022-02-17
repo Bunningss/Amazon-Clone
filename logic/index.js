@@ -57,3 +57,53 @@ orderLinks.forEach((ol) => {
         ol.classList.add('highlight');
     });
 });
+
+// Payments 
+const scr = document.querySelector('.firstscreen');
+const card = document.querySelectorAll('.mypayments-card');
+
+card.forEach(c => {
+    c.addEventListener('click', () => {
+        document.body.querySelectorAll('div').forEach(i => {
+            i.classList.remove('clicked')
+        });
+        c.classList.add('clicked');
+        scr.innerHTML = c.innerHTML;
+        scr.style.height = '150px';
+        addCard.style.display = 'none';
+    });
+});
+
+
+// Add payment btn
+const addCard = document.querySelector('.secondscreen');
+const addCardBtn = document.querySelector('.add-payment-card-link');
+
+addCardBtn.addEventListener('click', () => {
+    document.body.querySelectorAll('div').forEach(i => {
+        i.classList.remove('clicked')
+    });
+    scr.style.height = '200px';
+    addCard.style.display = 'block';
+});
+
+// Hide add card Popup
+const cardForm = document.querySelector('.card-form-popup');
+const cross = document.querySelector('.abs');
+const cancel = document.querySelector('.cancel-btn');
+const enablePopup = document.querySelector('.enable-popup');
+
+enablePopup.addEventListener('click', () => {
+    cardForm.style.display = 'flex';
+    body.classList.add('noscroll');
+});
+
+cross.addEventListener('click', () => {
+    cardForm.style.display = 'none';
+    body.classList.add('noscroll');
+});
+
+cancel.addEventListener('click', () => {
+    cardForm.style.display = 'none';
+    body.classList.add('noscroll');
+});

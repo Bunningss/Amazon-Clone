@@ -21,6 +21,7 @@
 @import "./myorders.css";
 @import "./myaddresses.css";
 @import "./addaddress.css";
+@import "./mypayments.css";
 
 * {
   margin: 0;

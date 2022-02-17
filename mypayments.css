@@ -1,0 +1,373 @@
+.mypayments-container {
+  max-width: 964px;
+  margin: 20px auto;
+}
+
+.payment-header {
+  font-size: 28px;
+  margin: 10px 0;
+}
+
+.card-list-header {
+  font-size: 24px;
+  font-weight: 400;
+  /* background: #fff; */
+  margin: 10px 0;
+  border-bottom: 1px solid grey;
+  padding: 0 5px;
+}
+
+.mypayments-content {
+  width: 100%;
+  display: flex;
+}
+
+.mypayments-card-list {
+  width: 30%;
+  /* border: 1px solid grey; */
+  background: #e1e2e2;
+  /* padding: 5px; */
+  border-radius: 5px;
+}
+
+.mypayments-card {
+  display: flex;
+  padding-bottom: 5px;
+  padding: 10px 0;
+  border-bottom: 1px solid grey;
+}
+
+.mypayments-card.clicked {
+  background: #fff;
+  border-left: 8px solid orange;
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+  border-radius: 5px;
+}
+
+.mypayments-card > img {
+  margin: 5px;
+  width: 85px;
+  height: 54px;
+}
+
+.mypayments-card-text {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+}
+
+.mypayments-card-text > p {
+  font-size: 14px;
+  padding: 2px 3px;
+}
+
+.mypayments-card-screen {
+  background: #fff;
+  width: 70%;
+  height: 150px;
+  margin-left: 10px;
+  /* padding: 10px; */
+  display: flex;
+  position: relative;
+}
+
+.secondscreen {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 200px;
+  background: #fff;
+  padding: 10px;
+  /* margin-left: 10px; */
+  display: none;
+  z-index: 5;
+}
+
+.firstscreen {
+  /* background: red; */
+  width: 70%;
+  width: 100%;
+  height: 100%;
+  margin-left: 10px;
+  padding: 10px;
+  display: flex;
+  position: relative;
+}
+
+.firstscreen > img {
+  height: 124px;
+  width: 196px;
+  border-radius: 5px;
+}
+
+.firstscreen > .mypayments-card-text > p {
+  padding: 10px;
+}
+
+.edit-remove {
+  display: none;
+  /* padding: 10px; */
+}
+
+.edit-remove > p {
+  color: red;
+  padding: 10px;
+}
+
+.edit-remove > a {
+  padding: 10px;
+  color: #007185;
+  border-right: 1px solid grey;
+}
+
+.mypayments-card-screen > .mypayments-card-text .edit-remove {
+  display: flex;
+}
+
+.add-payment-card {
+  display: flex;
+  margin: 15px 0;
+}
+
+.add-payment-card-img {
+  margin: 5px;
+  width: 85px;
+  height: 54px;
+  border: 1px solid grey;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.add-payment-card-img > img {
+  height: 90%;
+  width: 90%;
+  object-fit: contain;
+  filter: opacity(0.5);
+}
+
+.add-payment-card-link {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.add-payment-card-link > p {
+  color: #007185;
+  font-size: 14px;
+}
+
+.add-payment-card-link > p:hover {
+  color: #c85552;
+  text-decoration: underline;
+}
+
+.add-a-card {
+  /* display: none; */
+  width: 100%;
+  z-index: 10;
+}
+
+.add-a-card > h2 {
+  font-size: 24px;
+  font-weight: 400;
+  border-bottom: 1px solid grey;
+  width: 100%;
+  padding: 10px 0;
+}
+
+.cardAndIcons {
+  display: flex;
+}
+
+.cardAndIconsText {
+  flex: 1;
+}
+
+.cardAndIconsText > h4 {
+  font-size: 18px;
+  padding: 5px 0;
+}
+
+.cardAndIconsText > p {
+  font-size: 15px;
+  padding: 2px 0;
+  margin-bottom: 30px;
+}
+
+.cardAndIconsText > span {
+  color: rgb(61, 60, 60);
+  border: 1px solid grey;
+  padding: 3px 10px;
+  border-radius: 5px;
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: fit-content;
+}
+
+.cardAndIconsIcons {
+  display: flex;
+  flex-wrap: wrap;
+  width: 15%;
+  height: 60px;
+}
+
+.cardAndIconsIcons > img {
+  width: 30px;
+  height: 30px;
+  margin: 5px;
+}
+
+.card-form-popup {
+  background: rgba(0, 0, 0, 0.35);
+  display: none;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  z-index: 20;
+}
+
+.card-form-content {
+  background: #fff;
+  width: 700px;
+  height: 230px;
+  border-radius: 5px;
+  position: relative;
+}
+
+.card-popup-top {
+  padding: 10px;
+  height: 15%;
+  background: #ededed;
+  border-radius: 5px;
+}
+
+.card-popup-top > h6 {
+  font-size: 13px;
+}
+
+.card-popup-bottom {
+  display: flex;
+  padding: 10px;
+  height: 65%;
+  border-top: 1px solid grey;
+  border-bottom: 1px solid grey;
+}
+
+.card-popup-left {
+  width: 50%;
+}
+
+.card-popup-left > form {
+  display: flex;
+  flex-direction: column;
+}
+
+.card-flex {
+  height: 31px;
+  /* margin: 10px 0; */
+  margin-bottom: 8px;
+}
+
+.card-flex > label {
+  font-size: 13px;
+  font-weight: 600;
+  margin: 0 15px;
+}
+
+.card-flex > input {
+  height: 100%;
+  border-radius: 5px;
+  outline: 0;
+  border: 1px solid grey;
+  margin: 0 10px;
+  padding: 0 10px;
+}
+
+.expiration {
+  display: flex;
+  /* margin: 10px; */
+  justify-content: space-evenly;
+  align-items: center;
+}
+
+.expiration > label {
+  font-size: 13px;
+  font-weight: 600;
+  min-width: fit-content;
+}
+
+.expiration > select {
+  border: 1px solid grey;
+  outline: 0;
+  border-radius: 5px;
+  width: 30%;
+  height: 31px;
+  /* margin: 0 5px; */
+}
+
+.card-popup-right {
+  width: 50%;
+  border-left: 1px solid grey;
+  padding: 10px;
+}
+
+.card-popup-right > p {
+  font-size: 14px;
+}
+
+.popup-images {
+  width: 80px;
+  display: flex;
+  flex-wrap: wrap;
+  margin: 10px 0;
+}
+
+.popup-images > img {
+  width: 30px;
+  margin: 3px;
+}
+
+.card-popup-btm {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  background: #f1f1f1;
+  height: 20%;
+  padding: 0 10px;
+  border-radius: 5px;
+}
+
+.cancel-btn {
+  padding: 10px;
+  background: #fff;
+  border-radius: 10px;
+  font-size: 13px;
+}
+
+.add-card-btn {
+  padding: 10px;
+  background: #f7ca00;
+  border-radius: 10px;
+  margin-left: 5px;
+  font-size: 13px;
+  color: #000;
+}
+
+.abs {
+  position: absolute;
+  top: 10px;
+  right: 15px;
+}
+
+.abs:hover {
+  border: 1px solid grey;
+  border-radius: 50%;
+}
