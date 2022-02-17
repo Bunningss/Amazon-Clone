@@ -26,12 +26,12 @@ const navAccFlyout = document.querySelector('.hover-element');
 
 navEle.addEventListener('mouseover', () => {
     navAccFlyout.style.display = 'flex';
-    // body.classList.add('noscroll');
+
 });
 
 navEle.addEventListener('mouseout', () => {
     navAccFlyout.style.display = 'none';
-    // body.classList.remove('noscroll');
+
 });
 
 // Nav Currency Flyout
@@ -41,10 +41,19 @@ const navCurFlyout = document.querySelector('.nav-currency-flyout');
 
 navCur.addEventListener('mouseover', () => {
     navCurFlyout.style.display = 'block';
-    // body.classList.add('noscroll');
+
 });
 
 navCur.addEventListener('mouseout', () => {
     navCurFlyout.style.display = 'none';
-    // body.classList.remove('noscroll');
+
+});
+
+// My orders
+const orderLinks = document.querySelectorAll('.myorders-link');
+
+orderLinks.forEach((ol) => {
+    ol.addEventListener('click', () => {
+        ol.classList.add('highlight');
+    });
 });

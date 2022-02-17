@@ -19,6 +19,8 @@
 @import "./cart.css";
 @import "./myaccount.css";
 @import "./myorders.css";
+@import "./myaddresses.css";
+@import "./addaddress.css";
 
 * {
   margin: 0;
@@ -50,6 +52,10 @@ a {
 
 .highlight {
   border-bottom: 4px solid orange;
+}
+
+.bold {
+  font-weight: 600;
 }
 
 /* Custom Scroll Bar */

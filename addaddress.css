@@ -1,0 +1,67 @@
+.add-address-container {
+  margin: 0 auto;
+  max-width: 540px;
+}
+
+.add-address-header {
+  font-size: 24px;
+  font-weight: 400;
+  margin: 10px 0;
+}
+
+.add-address-form > select {
+  width: 100%;
+  height: 31px;
+  border-radius: 10px;
+  padding: 0 10px;
+  background: #edf5f5;
+  outline: 0;
+}
+
+.add-address-form > p {
+  margin-top: 10px;
+  font-size: 14px;
+  padding: 3px 0;
+}
+
+.aainput {
+  width: 100%;
+  height: 31px;
+  border-radius: 5px;
+  outline: 0;
+  border: 1px solid grey;
+  margin-bottom: 10px;
+}
+
+.default-address {
+  display: flex;
+  align-items: center;
+  font-size: 12px;
+  margin: 10px 0;
+}
+
+.checkbox-small {
+  width: 12px;
+  height: 12px;
+  margin-right: 6px;
+}
+
+.add-address-btn {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 20px 0;
+  padding: 10px 15px;
+  background: #f7ca00;
+  border-radius: 10px;
+  border: 0;
+  outline: 0;
+  font-size: 12px;
+  font-weight: 400;
+  color: #000;
+  width: 20%;
+}
+
+.add-address-btn:hover {
+  background: #e4bb04;
+}

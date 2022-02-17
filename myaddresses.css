@@ -1,0 +1,108 @@
+.myaddress-container {
+  margin: 0 auto;
+  max-width: 1000px;
+}
+
+.myaddress-header {
+  margin: 10px 0;
+  padding: 10px;
+  font-size: 28px;
+  font-weight: 400;
+}
+
+.myaddress-cards {
+  padding: 10px;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: 1fr 1fr 1fr;
+}
+
+.add-address {
+  color: grey;
+}
+
+.add-address-card {
+  height: 266px;
+  width: 320px;
+  border: 1px solid grey;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  border-radius: 10px;
+  margin: 10px;
+}
+
+.add-address-card > img {
+  width: 60px;
+  filter: opacity(0.5);
+}
+
+.add-address-card > h3 {
+  font-size: 24px;
+  font-weight: 400;
+}
+
+.myaddress-card {
+  height: 266px;
+  width: 320px;
+  border: 1px solid grey;
+  border-radius: 10px;
+  margin: 10px;
+  border-bottom: 3px solid grey;
+}
+
+.myaddress-card-top {
+  padding: 10px 15px;
+  border-bottom: 1px solid grey;
+  color: grey;
+  display: flex;
+}
+
+.myaddress-card-top > p {
+  padding: 0 10px;
+  font-size: 14px;
+}
+
+.myaddress-card-bottom {
+  padding: 10px 15px;
+}
+
+.myaddress-card-bottom > span {
+  font-size: 14px;
+}
+
+.myaddress-card-bottom > p {
+  padding: 2px 0;
+  font-size: 14px;
+}
+
+.myaddress-card-bottom > a {
+  font-size: 14px;
+  color: #007185;
+}
+
+.myaddress-card-bottom > a:hover {
+  color: #c85552;
+  text-decoration: underline;
+}
+
+.last-element {
+  display: flex;
+  margin-top: 60px;
+}
+
+.last-element > a {
+  padding: 0 10px;
+  color: #007185;
+  font-size: 12px;
+}
+
+.last-element > a:hover {
+  color: #c85552;
+  text-decoration: underline;
+}
+
+.border-right {
+  border-right: 2px solid grey;
+}
