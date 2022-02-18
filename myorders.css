@@ -53,6 +53,7 @@
 .myorders-linkbar {
   display: flex;
   border-bottom: 1px solid lightgrey;
+  background: #fff;
 }
 
 .myorders-linkbar > li {
@@ -269,5 +270,58 @@
 
   .myorders-mobile {
     display: block;
+  }
+
+  .myorders-header-topTop {
+    display: flex;
+    list-style: none;
+    border-bottom: 1px solid lightgrey;
+    margin: 10px 0;
+  }
+
+  .myorders-header-topTop > li {
+    padding: 10px 10px;
+  }
+
+  .myorders-header-topTop > li > a {
+    color: #027f95;
+  }
+
+  .filter-selection {
+    padding: 15px 10px;
+    background: #e0f5f4;
+    font-size: 14px;
+  }
+
+  .myorders-mobile-card {
+    padding: 15px;
+    display: flex;
+    border-bottom: 1px solid lightgrey;
+    position: relative;
+  }
+
+  .myorders-product-img {
+    height: 80px;
+    width: 80px;
+  }
+
+  .myorders-mobile-text > h6 {
+    font-size: 16px;
+    padding: 10px;
+    color: #222222;
+  }
+  .myorders-mobile-text > p {
+    font-size: 14px;
+    padding: 10px;
+    color: grey;
+  }
+
+  .abs-arrow {
+    position: absolute;
+    width: 20px;
+    top: 0;
+    bottom: 0;
+    right: 5px;
+    margin: auto;
   }
 }

@@ -1,0 +1,139 @@
+.buyagain-mobile {
+  /* display: none; */
+}
+
+.buyagain-mobile-cards {
+  display: grid;
+  grid-template-columns: repeat(8, 1fr);
+}
+
+.buyagain-mobile {
+  display: block;
+}
+.buyagain-mobile-top {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 50px;
+}
+
+.buyagain-mobile-header {
+  padding: 10px;
+  font-size: 18px;
+}
+
+.buyagain-mobile-filter {
+  display: flex;
+  align-items: center;
+  background: #fff;
+  padding: 10px;
+  border-radius: 10px;
+  border: 1px solid lightgrey;
+}
+
+.buyagain-mobile-filter > p {
+  font-size: 14px;
+}
+
+.buyagain-mobile-filter > img {
+  width: 20px;
+  height: 20px;
+  transform: rotate(90deg);
+}
+
+.buyagain-searchbar {
+  height: 45px;
+  position: relative;
+  display: none;
+}
+
+.buyagain-searchbar > input {
+  height: 100%;
+  width: 100%;
+  border: 0;
+  padding-left: 40px;
+}
+
+.buyagain-searchbar > img {
+  width: 20px;
+  position: absolute;
+  top: 0;
+  left: 10px;
+  bottom: 0;
+  margin: auto;
+  padding: 2px;
+}
+
+.buyagain-mobile-card {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background: #fff;
+  /* margin: 2px; */
+  border: 1px solid lightgrey;
+}
+
+.buyagain-mobile-card > img {
+  width: 175px;
+  height: 125px;
+  object-fit: contain;
+  padding: 5px;
+}
+
+.buyagain-mobile-card-text > h6 {
+  padding: 5px;
+  font-size: 15px;
+  color: #222222;
+  font-weight: 500;
+}
+
+.ba-m-p-p {
+  font-size: 18px;
+  color: #222222;
+  padding: 5px;
+}
+
+.di {
+  font-size: 12px;
+  color: #222222;
+  padding: 0 5px;
+  line-height: 1.5;
+}
+
+.addToBasket {
+  border: 0;
+  background: #ffd814;
+  width: 90%;
+  padding: 10px 0;
+  border-radius: 10px;
+  margin: 30px 0 5px 0;
+}
+/* } */
+
+@media screen and (max-width: 450px) {
+  .buyagain-mobile-cards {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    /* margin: 5px 0; */
+  }
+
+  .myorders-linkbar {
+    display: none;
+  }
+
+  .buyagain-searchbar {
+    height: 45px;
+    position: relative;
+    display: block;
+  }
+
+  .buyagain-mobile-card {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background: #fff;
+    margin: 2px;
+  }
+}
