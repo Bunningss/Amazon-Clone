@@ -96,7 +96,7 @@
   transform: rotate(180deg);
 }
 
-@media screen and (max-width: 1400px) {
+@media screen and (max-width: 1600px) {
   .slider {
     margin: 0 0.5rem;
   }

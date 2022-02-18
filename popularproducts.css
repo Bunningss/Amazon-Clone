@@ -29,7 +29,7 @@
   object-fit: cover;
 }
 
-@media screen and (max-width: 1400px) {
+@media screen and (max-width: 1600px) {
   .popular-products {
     margin: 0 0.5rem;
   }
@@ -37,8 +37,7 @@
 
 @media screen and (max-width: 450px) {
   .popular-products {
-    margin: 0px 0;
-    padding: 5px;
+    display: none;
   }
 
   .popular-products > h4 {

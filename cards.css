@@ -42,7 +42,7 @@
   margin-left: 0;
 }
 
-@media screen and (max-width: 1400px) {
+@media screen and (max-width: 1600px) {
   .cards-container {
     margin: 1rem 0.5rem;
   }
