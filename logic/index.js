@@ -1,4 +1,10 @@
+// Back to top
+const backToTop = document.querySelector('.to-top');
+backToTop.addEventListener('click', () => {
+    window.scrollTo(0, 0)
+});
 
+// Sidebar
     const desktopToggle = document.querySelector('.toggle');
     const mobileToggle = document.querySelector('.nav-mobile-toggle');
     const mobileSidebar = document.querySelector('.sidebar');

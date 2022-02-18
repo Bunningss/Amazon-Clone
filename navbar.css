@@ -188,7 +188,7 @@
   .mobile-navbar-top {
     display: flex;
     justify-content: space-between;
-    padding: 5px 20px;
+    padding: 5px 10px;
   }
 
   .mobile-navbar-left {
@@ -222,7 +222,10 @@
     display: flex;
     align-items: center;
     margin-right: 10px;
-    color: #fff;
+    color: #717171;
+    background: #fff;
+    border-radius: 21px;
+    padding: 6px;
   }
 
   .mobile-nav-account > p {
@@ -232,7 +235,7 @@
 
   .mobile-nav-account > svg {
     margin-left: 5px;
-    color: #fff;
+    /* color: #fff; */
   }
 
   .mobile-navbar-bottom {
@@ -250,7 +253,7 @@
   }
 
   .nav-mobile-search-input {
-    width: 90%;
+    width: 95%;
     height: 100%;
     border-radius: 10px;
     outline: 0;
@@ -263,7 +266,7 @@
     height: 44px;
     position: absolute;
     top: 0;
-    right: 5%;
+    right: 2.5%;
     background: #fbba6a;
     border-radius: 10px;
     padding: 10px;
