@@ -107,3 +107,4 @@ cancel.addEventListener('click', () => {
     cardForm.style.display = 'none';
     body.classList.add('noscroll');
 });
+

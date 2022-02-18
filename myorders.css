@@ -257,3 +257,17 @@
   font-size: 14px;
   color: #007185;
 }
+
+.myorders-mobile {
+  display: none;
+}
+
+@media screen and (max-width: 450px) {
+  .myorders-container {
+    display: none;
+  }
+
+  .myorders-mobile {
+    display: block;
+  }
+}
