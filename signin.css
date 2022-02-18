@@ -104,6 +104,11 @@
   height: 48px;
   font-weight: 600;
   font-size: 14px;
+  background: #f7ca00;
+}
+
+.signin-stepOne > button:hover {
+  background: #e6a400;
 }
 
 .middle {

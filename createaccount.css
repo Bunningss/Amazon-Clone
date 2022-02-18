@@ -1,79 +1,81 @@
-.create-account-container {
+.signup-container {
+  width: 100vw;
+  height: 100vh;
+  background: rgba(0, 0, 0, 0.25);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.signup-wrapper {
+  width: 570px;
+  background: #fff;
+  border-radius: 10px;
+  position: relative;
+}
+
+.signup-header-top {
+  text-align: center;
+  font-size: 16px;
+  padding: 15px;
+  border-bottom: 1px solid lightgrey;
+}
+
+.signup-form {
   display: flex;
   flex-direction: column;
+  padding: 24px;
+}
+
+.signup-form > input {
+  height: 48px;
+  margin: 24px 0;
+  border: 1px solid grey;
+  border-radius: 10px;
+  padding: 5px 10px;
+}
+
+.signup-form > p {
+  font-size: 12px;
+}
+
+.signup-form > a {
+  width: 100%;
+}
+
+.agreeAndC {
+  width: 100%;
+  border: 0;
+  display: flex;
   justify-content: center;
   align-items: center;
-}
-
-.create-account-wrapper {
-  width: 350px;
-  border: 1px solid lightgrey;
-  border-radius: 5px;
-  padding: 20px 26px;
-  margin-bottom: 20px;
-}
-
-.create-account-wrapper > h2 {
-  font-size: 28px;
-  font-weight: 400;
-  margin-bottom: 10px;
-}
-
-.input-related {
-  width: 100%;
-  margin-bottom: 14px;
-}
-
-.input-related > p {
-  font-size: 12px;
+  height: 48px;
+  margin: 10px 0;
+  border-radius: 10px;
+  font-size: 16px;
   font-weight: 600;
+  background: #f7ca00;
 }
 
-.input-related > input {
-  width: 100%;
-  height: 31px;
-  border: 1px solid grey;
-  border-radius: 3px;
-  padding: 0 5px;
-  outline: 0;
+.agreeAndC:hover {
+  background: #e6a400;
 }
 
-.signin-btn {
-  border: 1px solid grey;
-  border-radius: 3px;
-  width: 100%;
-  height: 31px;
+.goBack {
+  position: absolute;
+  top: 15px;
+  left: 15px;
   display: flex;
   justify-content: center;
   align-items: center;
 }
 
-.create-account-wrapper > p {
-  font-size: 12px;
-  margin: 20px 0 26px 0;
-  line-height: 1.5;
+.goBack > img {
+  width: 15px;
+  transform: rotate(180deg);
 }
 
-.create-account-wrapper > p > a {
-  color: rgb(68, 133, 155);
-}
-
-.create-account-wrapper > p > a:hover {
-  color: #c85552;
-  text-decoration: underline;
-}
-
-.create-account-wrapper > .create-acc-redirection > h6 {
-  font-size: 13px;
-  font-weight: 400;
-  margin: 5px 0;
-}
-
-.create-account-wrapper > .create-acc-redirection > h6 > a {
-  color: rgb(68, 133, 155);
-}
-
-.create-account-wrapper > .create-acc-redirection > h6 > a:hover {
-  color: #c85552;
-  text-decoration: underline;
+.goBack:hover {
+  background: rgba(0, 0, 0, 0.15);
+  border-radius: 50%;
 }

@@ -8,41 +8,26 @@
     <link rel="stylesheet" href="./index.css" />
   </head>
   <body class="noscroll">
-    <div class="create-account-container">
-      <div class="signin-logo">
-        <a href="./index.html">Briton Group</a>
-      </div>
-      <div class="create-account-wrapper">
-        <h2>Create account</h2>
-        <div class="input-related">
-          <p>Your name</p>
-          <input type="text" required />
-        </div>
-        <div class="input-related">
-          <p>Mobile number or email</p>
-          <input type="text" />
-        </div>
-        <div class="input-related">
-          <p>Password</p>
-          <input type="password" placeholder="At least 6 characters" />
-        </div>
-        <div class="input-related">
-          <p>Re-enter password</p>
-          <input type="password" />
-        </div>
-        <input type="submit" class="signin-btn" />
-        <p>
-          By signing in you agree to Amazon's
-          <a href="">Conditions of Use & Sale.</a> Please see our
-          <a href="">Privacy Notice,</a> our <a href="">Cookies Notice</a> and
-          our <a href="">Interest-Based Ads Notice.</a>
-        </p>
-        <div class="create-acc-redirection">
-          <h6>Already have an account? <a href="./signin.html">Sign in</a></h6>
-          <h6>
-            Buying for work? <a href="">Create a free business account</a>
-          </h6>
-        </div>
+    <!-- SIgnup -->
+    <div class="signup-container">
+      <div class="signup-wrapper">
+        <a class="goBack" href="./signin.html"
+          ><img src="./imgs/icons/arrow-slick.png" alt=""
+        /></a>
+        <h6 class="signup-header-top">Finish signing up</h6>
+        <form action="#" class="signup-form">
+          <input type="text" placeholder="First name" />
+          <input type="text" placeholder="Last name" />
+          <input type="date" placeholder="Date of Birth" />
+          <input type="email" placeholder="Email address" />
+          <input type="password" placeholder="Password" />
+          <p>
+            By selecting Agree and continue, I agree to Airbnb’s Terms of
+            Service, Payments Terms of Service, and Nondiscrimination Policy and
+            acknowledge the Privacy Policy.
+          </p>
+          <a href=""><button class="agreeAndC">Agree and Continue</button></a>
+        </form>
       </div>
     </div>
     <!-- Sign In Footer -->
