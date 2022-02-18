@@ -153,3 +153,60 @@
   /* width: 90%; */
   color: #000;
 }
+
+.cart-container-mobile {
+  display: none;
+}
+
+@media screen and (max-width: 450px) {
+  .cart-container {
+    display: none;
+  }
+
+  .cart-container-mobile {
+    margin: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border-bottom: 1px solid lightgrey;
+  }
+
+  .cart-container-mobile > svg {
+    width: 250px;
+  }
+
+  .cart-container-mobile > h2 {
+    font-size: 22px;
+    margin: 3px 0;
+  }
+
+  .cart-container-mobile > a {
+    color: rgb(68, 133, 155);
+    font-size: 14px;
+  }
+
+  .cart-container-mobile > a:hover {
+    color: #c85552;
+    text-decoration: underline;
+  }
+
+  .cart-mobile-btns {
+    width: 100%;
+  }
+
+  .cartLink {
+    width: 100%;
+  }
+
+  .cartToSign {
+    width: 100%;
+    margin: 10px 0;
+    padding: 10px 20px;
+    border-radius: 10px;
+    font-size: 14px;
+    font-weight: 600;
+    border: 0;
+    background: #f7ca00;
+  }
+}
