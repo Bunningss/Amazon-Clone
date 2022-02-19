@@ -1,8 +1,4 @@
-// Back to top
-const backToTop = document.querySelector('.to-top');
-backToTop.addEventListener('click', () => {
-    window.scrollTo(0, 0)
-});
+
 
 // Sidebar
     const desktopToggle = document.querySelector('.toggle');
@@ -53,6 +49,12 @@ navCur.addEventListener('mouseover', () => {
 navCur.addEventListener('mouseout', () => {
     navCurFlyout.style.display = 'none';
 
+});
+
+// Back to top
+const backToTop = document.querySelector('.to-top');
+backToTop.addEventListener('click', () => {
+    window.scrollTo(0, 0)
 });
 
 // My orders

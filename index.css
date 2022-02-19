@@ -24,6 +24,10 @@
 @import "./mypayments.css";
 @import "./buyagain.css";
 @import "./currency.css";
+@import "./verificationcode.css";
+@import "./welcomescreen.css";
+@import "./enterpass.css";
+@import "./dev.css";
 
 * {
   margin: 0;
