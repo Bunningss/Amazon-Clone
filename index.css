@@ -23,6 +23,7 @@
 @import "./addaddress.css";
 @import "./mypayments.css";
 @import "./buyagain.css";
+@import "./currency.css";
 
 * {
   margin: 0;

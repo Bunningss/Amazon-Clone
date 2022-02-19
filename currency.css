@@ -1,0 +1,50 @@
+.currency-container {
+  max-width: 1000px;
+  margin: 80px 0 0 180px;
+}
+
+.currency-settings-he {
+  font-size: 18px;
+  font-weight: 700;
+  line-height: 24px;
+  margin-bottom: 12px;
+}
+
+.currency-container > p {
+  font-size: 14px;
+}
+
+.currency-container > select {
+  width: 400px;
+  height: 30px;
+  margin: 12px 0;
+  border: 1px solid lightgrey;
+  background: #e3e6e6;
+  border-radius: 10px;
+  outline: 0;
+}
+
+.currency-btns {
+  margin-top: 50px;
+}
+
+.currency-btn {
+  padding: 5px 10px;
+  border-radius: 10px;
+  border: 1px solid lightgrey;
+}
+
+.colorful {
+  background: #f7ca00;
+}
+
+@media screen and (max-width: 450px) {
+  .currency-container {
+    margin-top: 10px;
+    margin-left: 10px;
+  }
+
+  .currency-container > select {
+    width: 98%;
+  }
+}
