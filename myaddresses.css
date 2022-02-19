@@ -106,3 +106,72 @@
 .border-right {
   border-right: 2px solid grey;
 }
+
+.hod {
+  display: none;
+}
+
+@media screen and (max-width: 450px) {
+  .add-address {
+    display: none;
+  }
+
+  .myaddress-cards {
+    display: grid;
+    grid-template-columns: 1fr;
+    padding: 0;
+    margin: 0 5px;
+    background: #fff;
+  }
+
+  .myaddress-card {
+    width: 100%;
+    margin: 0;
+    background: #fff;
+    /* border-radius: 0; */
+  }
+
+  .last-element {
+    display: none;
+  }
+
+  .last-element-mobile {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 60px;
+  }
+
+  .last-el-btn {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 5px 40px;
+    border-radius: 10px;
+    border: 1px solid lightgrey;
+    background: #fff;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+  }
+
+  .hod {
+    display: block;
+    height: 50px;
+  }
+
+  .add-address-mobile {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-top: 1px solid lightgrey;
+    border-bottom: 1px solid lightgrey;
+    padding: 10px;
+    margin: 10px;
+  }
+
+  .add-address-mobile > p {
+    color: rgba(0, 0, 0, 0.8);
+  }
+
+  .add-address-mobile > img {
+    width: 15px;
+  }
+}

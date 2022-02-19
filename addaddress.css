@@ -66,3 +66,13 @@
 .add-address-btn:hover {
   background: #e4bb04;
 }
+
+@media screen and (max-width: 450px) {
+  .add-address-container {
+    margin: 10px;
+  }
+
+  .add-address-btn {
+    width: fit-content;
+  }
+}
