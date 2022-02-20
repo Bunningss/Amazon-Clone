@@ -111,6 +111,10 @@
   display: none;
 }
 
+.last-element-mobile {
+  display: none;
+}
+
 @media screen and (max-width: 450px) {
   .add-address {
     display: none;

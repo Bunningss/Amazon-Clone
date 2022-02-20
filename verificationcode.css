@@ -37,6 +37,7 @@
   border-radius: 21px;
   border: 1px solid grey;
   outline: 0;
+  padding: 0 10px;
 }
 
 .verify-content > a {
