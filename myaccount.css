@@ -126,15 +126,13 @@
     list-style: none;
   }
 
-  .my-acc-mobile-links > li {
+  .my-acc-mobile-links > a > li {
     padding: 15px 10px;
     border-bottom: 1px solid lightgrey;
     display: flex;
     justify-content: space-between;
     align-items: center;
-  }
-
-  .my-acc-mobile-links > li > a {
     color: rgb(46, 44, 44);
+    font-size: 14px;
   }
 }

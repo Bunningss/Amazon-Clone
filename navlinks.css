@@ -36,13 +36,24 @@
 .toggle {
   display: flex;
   justify-content: center;
+  align-items: center;
 }
 
-.toggle > img {
-  height: 20px;
-  filter: invert(1);
+.ham {
+  display: flex;
+  flex-direction: column;
 }
 
+.span {
+  width: 15px;
+  height: 2px;
+  background: #fff;
+  margin: 1px 5px;
+}
+
+.toggle > p {
+  margin-top: 2px;
+}
 @media screen and (max-width: 450px) {
   .nav-links {
     background: #232f3e;

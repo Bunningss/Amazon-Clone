@@ -53,6 +53,11 @@ a {
   opacity: 1;
 }
 
+.mobile-sidebar-bd.m-slide-in {
+  transform: translateX(0px);
+  transition: all 0.4s ease;
+}
+
 .icon-vsmall.filtered {
   filter: invert(1);
 }

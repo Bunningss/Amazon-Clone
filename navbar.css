@@ -60,19 +60,49 @@
 }
 
 .nav-search-box {
-  width: 50%;
+  width: 60%;
   display: flex;
   height: 40px;
   margin: 0;
+  border-radius: 10px;
+  position: relative;
 }
 
 .nav-search-box > select {
-  width: 10%;
+  width: 40px;
+  border-radius: 5px;
+  position: absolute;
+  left: 0;
+  top: 0;
+  height: 40px;
+  border: 0;
+  z-index: 1;
+  background: #e0e0e0;
 }
 
 .nav-search-box > input {
-  width: 90%;
+  width: 100%;
   padding: 0 5px;
+  border: 0;
+  border-radius: 5px;
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: 0;
+  height: 40px;
+  margin: auto;
+  padding-left: 65px;
+}
+
+.nav-search-box > img {
+  height: 40px;
+  width: 40px;
+  z-index: 1;
+  position: absolute;
+  right: 0;
+  padding: 10px;
+  background: #4285f4;
+  border-radius: 5px;
 }
 
 .currency {

@@ -25,7 +25,7 @@
           <option value="">All</option>
         </select>
         <input type="text" />
-        <img src="" alt="" />
+        <img src="./imgs/icons/search-ico.png" alt="" />
       </div>
       <div class="currency">
         <img class="flag-img" src="./imgs/icons/uk-flag.png" alt="" />
@@ -33,7 +33,9 @@
         <!-- Nav Flyout Element -->
         <div class="nav-currency-flyout">
           <p>Change currency<a href="">Learn more</a></p>
-          <p><span>GBP</span> British Pound <a href="">Change</a></p>
+          <p>
+            <span>GBP</span> British Pound <a href="./currency.html">Change</a>
+          </p>
           <div class="nav-currency-location">
             <div class="nav-currency-location-flag">
               <img class="icon-vsmall" src="./imgs/icons/uk-flag.png" alt="" />
@@ -164,7 +166,10 @@
     <!-- Nav-Links -->
     <ul class="nav-links">
       <li class="toggle">
-        <img src="./imgs/icons/hamburger.png" alt="" />
+        <div class="ham">
+          <span class="span"></span><span class="span"></span
+          ><span class="span"></span>
+        </div>
         <p>All</p>
       </li>
       <li>
@@ -220,12 +225,121 @@
       </li>
     </ul>
 
+    <!-- Mobile Sidebar -->
+    <div class="mobile-sidebar-bd">
+      <div class="mobile-sidebar">
+        <div class="ms-header">
+          <div class="top">
+            <a href="./myaccount.html">
+              <div class="ms-account">
+                <p>Mizan</p>
+                <svg
+                  viewBox="0 0 32 32"
+                  xmlns="http://www.w3.org/2000/svg"
+                  aria-hidden="true"
+                  role="presentation"
+                  focusable="false"
+                  style="
+                    display: block;
+                    height: 25px;
+                    width: 25px;
+                    fill: currentcolor;
+                  "
+                >
+                  <path
+                    d="m16 .7c-8.437 0-15.3 6.863-15.3 15.3s6.863 15.3 15.3 15.3 15.3-6.863 15.3-15.3-6.863-15.3-15.3-15.3zm0 28c-4.021 0-7.605-1.884-9.933-4.81a12.425 12.425 0 0 1 6.451-4.4 6.507 6.507 0 0 1 -3.018-5.49c0-3.584 2.916-6.5 6.5-6.5s6.5 2.916 6.5 6.5a6.513 6.513 0 0 1 -3.019 5.491 12.42 12.42 0 0 1 6.452 4.4c-2.328 2.925-5.912 4.809-9.933 4.809z"
+                  ></path>
+                </svg>
+              </div>
+            </a>
+          </div>
+          <div class="bottom">
+            <div class="pabs">
+              <a href="./index.html"
+                ><p class="sml">Browse</p>
+                <!-- <br /> -->
+                <span class="big">Briton</span>
+              </a>
+            </div>
+          </div>
+        </div>
+        <ul class="ms-links">
+          <li class="ms-links-h">Trending</li>
+          <a href="">
+            <li>Best Seller</li>
+          </a>
+          <a href="">
+            <li>New Releases</li>
+          </a>
+          <a href="">
+            <li>Movers and Shakers</li>
+          </a>
+        </ul>
+        <ul class="ms-links">
+          <li class="ms-links-h">Top Departments For You</li>
+          <a href="">
+            <li>Baby</li>
+          </a>
+          <a href="">
+            <li>Health & Personal Care</li>
+          </a>
+          <a href="">
+            <li>Beauty</li>
+          </a>
+          <a href="">
+            <li>Home & Kitchen</li>
+          </a>
+        </ul>
+        <ul class="ms-links">
+          <li class="ms-links-h">Programs & Features</li>
+          <a href="">
+            <li>Today's Deals</li>
+          </a>
+          <a href="">
+            <li>Health & Pers</li>
+          </a>
+          <a href="">
+            <li>Beauty</li>
+          </a>
+          <a href="">
+            <li>Beauty</li>
+          </a>
+          <a href="">
+            <li>Beauty</li>
+          </a>
+          <a href="">
+            <li>Beauty</li>
+          </a>
+        </ul>
+      </div>
+      <div class="mobile-backdrop"></div>
+    </div>
+
     <!-- Sidebar -->
     <div class="sidebar">
       <div class="actual-sidebar">
         <div class="sidebar-header">
           <a href="./signin.html">
-            <img class="sm-icon" src="./imgs/icons/user_84308.png" alt="" />
+            <svg
+              viewBox="0 0 32 32"
+              xmlns="http://www.w3.org/2000/svg"
+              aria-hidden="true"
+              role="presentation"
+              focusable="false"
+              style="
+                display: block;
+                height: 25px;
+                width: 25px;
+                fill: currentColor;
+                background: #fff;
+                color: #717171;
+                border-radius: 50%;
+              "
+            >
+              <path
+                d="m16 .7c-8.437 0-15.3 6.863-15.3 15.3s6.863 15.3 15.3 15.3 15.3-6.863 15.3-15.3-6.863-15.3-15.3-15.3zm0 28c-4.021 0-7.605-1.884-9.933-4.81a12.425 12.425 0 0 1 6.451-4.4 6.507 6.507 0 0 1 -3.018-5.49c0-3.584 2.916-6.5 6.5-6.5s6.5 2.916 6.5 6.5a6.513 6.513 0 0 1 -3.019 5.491 12.42 12.42 0 0 1 6.452 4.4c-2.328 2.925-5.912 4.809-9.933 4.809z"
+              ></path>
+            </svg>
             <h2>Hello, Sign in</h2>
           </a>
         </div>
@@ -631,131 +745,131 @@
       <div class="my-acc-mobile-content">
         <h5>Orders</h5>
         <ul class="my-acc-mobile-links">
-          <li>
-            <a href="./myorders.html">Your Orders</a>
-            <img
-              class="icon-vsmall"
-              src="./imgs/icons/arrow-slick.png"
-              alt=""
-            />
-          </li>
-          <li>
-            <a href="">Subscribe and Save</a>
-            <img
-              src="./imgs/icons/arrow-slick.png"
-              alt=""
-              class="icon-vsmall"
-            />
-          </li>
-          <li>
-            <a href="">Your Briton Day</a>
-            <img
-              src="./imgs/icons/arrow-slick.png"
-              alt=""
-              class="icon-vsmall"
-            />
-          </li>
-        </ul>
+          <a href="./myorders.html">
+            <li>
+              <p>Your Orders</p>
+              <img
+                class="icon-vsmall"
+                src="./imgs/icons/arrow-slick.png"
+                alt=""
+              />
+            </li>
+          </a>
+          <a href="">
+            <li>
+              <p>Subscribe & Save</p>
+              <img
+                class="icon-vsmall"
+                src="./imgs/icons/arrow-slick.png"
+                alt=""
+              />
+            </li>
+          </a>
+          <a href="">
+            <li>
+              <p>Your Briton Day</p>
+              <img
+                class="icon-vsmall"
+                src="./imgs/icons/arrow-slick.png"
+                alt=""
+              />
+            </li>
+          </a>
       </div>
+
       <div class="my-acc-mobile-content">
         <h5>Account Settings</h5>
         <ul class="my-acc-mobile-links">
-          <li>
-            <a href="">Login & Security</a>
-            <img
-              class="icon-vsmall"
-              src="./imgs/icons/arrow-slick.png"
-              alt=""
-            />
-          </li>
-          <li>
-            <a href="">Your payments</a>
-            <img
-              src="./imgs/icons/arrow-slick.png"
-              alt=""
-              class="icon-vsmall"
-            />
-          </li>
-          <li>
-            <a href="">Manage gift card balance</a>
-            <img
-              src="./imgs/icons/arrow-slick.png"
-              alt=""
-              class="icon-vsmall"
-            />
-          </li>
-          <li>
-            <a href="">Top up account</a>
-            <img
-              src="./imgs/icons/arrow-slick.png"
-              alt=""
-              class="icon-vsmall"
-            />
-          </li>
-          <li>
-            <a href="">Apply a gift card to account</a>
-            <img
-              src="./imgs/icons/arrow-slick.png"
-              alt=""
-              class="icon-vsmall"
-            />
-          </li>
-          <li>
-            <a href="">Product Vouchers</a>
-            <img
-              src="./imgs/icons/arrow-slick.png"
-              alt=""
-              class="icon-vsmall"
-            />
-          </li>
-          <li>
-            <a href="">Your purchase preferences</a>
-            <img
-              src="./imgs/icons/arrow-slick.png"
-              alt=""
-              class="icon-vsmall"
-            />
-          </li>
-          <li>
-            <a href="">Manage gift card balance</a>
-            <img
-              src="./imgs/icons/arrow-slick.png"
-              alt=""
-              class="icon-vsmall"
-            />
-          </li>
-          <li>
-            <a href="">Manage gift card balance</a>
-            <img
-              src="./imgs/icons/arrow-slick.png"
-              alt=""
-              class="icon-vsmall"
-            />
-          </li>
-          <li>
-            <a href="">Manage gift card balance</a>
-            <img
-              src="./imgs/icons/arrow-slick.png"
-              alt=""
-              class="icon-vsmall"
-            />
-          </li>
-          <li>
-            <a href="">Manage gift card balance</a>
-            <img
-              src="./imgs/icons/arrow-slick.png"
-              alt=""
-              class="icon-vsmall"
-            />
-          </li>
-          <li>
-            <a href="">Manage gift card balance</a>
-            <img
-              src="./imgs/icons/arrow-slick.png"
-              alt=""
-              class="icon-vsmall"
-            />
-          </li>
+          <a href="">
+            <li>
+              <p>Login & Security</p>
+              <img
+                class="icon-vsmall"
+                src="./imgs/icons/arrow-slick.png"
+                alt=""
+              />
+            </li>
+          </a>
+          <a href="">
+            <li>
+              <p>Your Payments</p>
+              <img
+                class="icon-vsmall"
+                src="./imgs/icons/arrow-slick.png"
+                alt=""
+              />
+            </li>
+          </a>
+          <a href="">
+            <li>
+              <p>Manage Card Balance</p>
+              <img
+                class="icon-vsmall"
+                src="./imgs/icons/arrow-slick.png"
+                alt=""
+              />
+            </li>
+          </a>
+          <a href="">
+            <li>
+              <p>Top up account</p>
+              <img
+                class="icon-vsmall"
+                src="./imgs/icons/arrow-slick.png"
+                alt=""
+              />
+            </li>
+          </a>
+          <a href="">
+            <li>
+              <p>Apply a gift card</p>
+              <img
+                class="icon-vsmall"
+                src="./imgs/icons/arrow-slick.png"
+                alt=""
+              />
+            </li>
+          </a>
+          <a href="">
+            <li>
+              <p>Product Vouchers</p>
+              <img
+                class="icon-vsmall"
+                src="./imgs/icons/arrow-slick.png"
+                alt=""
+              />
+            </li>
+          </a>
+          <a href="./myaddresses.html">
+            <li>
+              <p>Your Addresses</p>
+              <img
+                class="icon-vsmall"
+                src="./imgs/icons/arrow-slick.png"
+                alt=""
+              />
+            </li>
+          </a>
+          <a href="">
+            <li>
+              <p>Login & Security</p>
+              <img
+                class="icon-vsmall"
+                src="./imgs/icons/arrow-slick.png"
+                alt=""
+              />
+            </li>
+          </a>
+          <a href="">
+            <li>
+              <p>Login & Security</p>
+              <img
+                class="icon-vsmall"
+                src="./imgs/icons/arrow-slick.png"
+                alt=""
+              />
+            </li>
+          </a>
         </ul>
       </div>
     </div>
@@ -813,7 +927,7 @@
         </ul>
       </div>
     </div>
-    <div class="footer2">
+    <!-- <div class="footer2">
       <div class="footer-logo">
         <h2>briton group</h2>
       </div>
@@ -838,7 +952,7 @@
           <li><a href="">United States</a></li>
         </ul>
       </div>
-    </div>
+    </div> -->
     <!-- Mobile Footer -->
     <div class="footer1-mobile">
       <ul class="mobile-footer1-col">
@@ -862,7 +976,7 @@
         <li><a href="">Customer Service</a></li>
       </ul>
     </div>
-    <div class="footer2-mobile">
+    <!-- <div class="footer2-mobile">
       <div class="lan-cur-loc">
         <a href="" class="lan">
           <img
@@ -872,7 +986,7 @@
           />
           <p>English</p>
         </a>
-        <a href="" class="cur">
+        <a href="./currency.html" class="cur">
           <img
             src="./imgs/icons/euro.png"
             alt=""
@@ -896,6 +1010,17 @@
       </div>
       <div class="mobile-copyright">
         <p>&copy 1996-2022, Briton Inc. or its affiliates</p>
+      </div>
+    </div> -->
+    <!-- Developer -->
+    <div class="developer">
+      <div class="dev">
+        <h2>Developed By <span class="dif">TATAMAX Limited</span></h2>
+        <h3>Maintained by</h3>
+        <img
+          src="https://zeusdrinks.uk/assets/img/briton-group-logo.png"
+          alt=""
+        />
       </div>
     </div>
     <!-- Logic -->
