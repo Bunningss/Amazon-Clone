@@ -35,7 +35,7 @@ mbackdrop.addEventListener('click', () => {
 
 
 // Nav account Flyout
-const navEle = document.querySelector('.account');
+const navEle = document.querySelector('.newAcc');
 const navAccFlyout = document.querySelector('.hover-element');
 
 navEle.addEventListener('mouseover', () => {
