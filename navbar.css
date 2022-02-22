@@ -148,11 +148,7 @@
   position: relative;
 }
 
-.newAcc {
-  position: relative;
-}
-
-.newAcc > a {
+.newAcc > div {
   display: flex;
   color: #717171;
   background: #fff;
@@ -161,7 +157,7 @@
   padding: 10px;
 }
 
-.newAcc > a > p {
+.newAcc > div > p {
   font-size: 12px;
   font-weight: 600;
   margin-right: 5px;
@@ -334,9 +330,9 @@
 .hover-element {
   background: #fff;
   position: absolute;
-  top: 45px;
+  top: 50px;
   /* left: 1200px; */
-  right: -100px;
+  right: 100px;
   z-index: 10;
   width: 500px;
   border: 1px solid lightgrey;

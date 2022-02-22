@@ -1,5 +1,3 @@
-
-
 // Sidebar
 const desktopToggle = document.querySelector('.toggle');
 const mobileSidebar = document.querySelector('.sidebar');
@@ -40,12 +38,14 @@ const navAccFlyout = document.querySelector('.hover-element');
 
 navEle.addEventListener('mouseover', () => {
     navAccFlyout.style.display = 'flex';
-
 });
 
 navEle.addEventListener('mouseout', () => {
     navAccFlyout.style.display = 'none';
+});
 
+window.addEventListener('load', () => {
+    navAccFlyout.style.display = 'none';
 });
 
 // Nav Currency Flyout
@@ -60,8 +60,41 @@ navCur.addEventListener('mouseover', () => {
 
 navCur.addEventListener('mouseout', () => {
     navCurFlyout.style.display = 'none';
-
 });
+
+// Hero Slider
+const slides = document.querySelector('.slider-items').children;
+const nextBtn = document.querySelector('.slider-arrow-container-right')
+const prevBtn = document.querySelector('.slider-arrow-container-left')
+let totalSlides = slides.length;
+let index = 0;
+
+nextBtn.onclick = function() {
+    next('next');
+}
+prevBtn.onclick = function() {
+    next('prev');
+}
+
+function next(direction) {
+    if(direction == 'next') {
+        index++
+        if(index == totalSlides) {
+            index=0;
+        }
+    } else {
+        if(index == 0) {
+            index = totalSlides-1
+        } else {
+            index--
+        }
+    }
+    for(i = 0; i < slides.length; i++ ) {
+        slides[i].classList.remove('active')
+    }
+    slides[index].classList.add('active')
+}
+
 
 // Back to top
 const backToTop = document.querySelector('.to-top');
